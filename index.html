@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>The Cocktail DB</title>
+</head>
+    <body class = "container">
+        <header>
+            <div>
+                <h1 class="header">
+                    Youtube Search API
+                </h1>
+            </div>
+        </header>
+        <main>
+            <form class="inputForm col s12">
+                <fieldset>
+                    <legend> Youtube Video Search </legend>
+                    <label for="search"> Search videos </label>
+                    <div class = "row">
+                        <div class = "input-field col s6">
+                            <input placeholder = "Search" id="search" class="searchBox" type="text"/>
+                        </div>
+                        <div class = "input-field col s6">
+                            <a class = "btn-floating waves-effect waves-light red" id="inputButton">
+                                <i class = "material-icons">search</i></a>
+                        </div>
+                    </div>
+                </fieldset>
+
+            </form>
+        </main>
+        <section class="results">
+
+        </section>
+
+        <div>
+            <button class = "btn btnPrev waves-effect waves-teal red hide">
+                <i class = "material-icons left">arrow_back</i>Previous</button>
+            <button class = "btn btnNext waves-effect waves-teal red hide">
+                <i class = "material-icons right">arrow_forward</i>Next</button>
+        </div>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="js/index.js"></script>
+        <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+    </body>
+</html>
